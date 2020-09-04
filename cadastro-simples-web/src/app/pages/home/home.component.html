@@ -1,0 +1,58 @@
+
+<pre>{{cepPesquisa | json}}</pre>
+
+<pre>{{formEndereco.value  | json}}</pre>
+
+
+
+<!-- Para usar formulários no angular precisamos do FormGroup -->
+<div class="container">
+    <form [formGroup]="formEndereco">
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="cep">CEP</label>
+                <input value="" class="form-control" type="text" 
+                formControlName="cep">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-10">
+                <label for="rua">RUA</label>
+                <input class="form-control" type="text" 
+                formControlName="rua">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="numero">NÚMERO</label>
+                <input class="form-control" type="text"
+                    formControlName="numero">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="bairro">BAIRRO</label>
+                <input class="form-control" type="text"
+                    formControlName="bairro">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="complemento">COMPLEMENTO</label>
+                <input class="form-control" type="text"
+                    formControlName="complemento">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="cidade">CIDADE</label>
+                <input class="form-control" type="text"
+                    formControlName="cidade">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="estado">ESTADO</label>
+                <input class="form-control" type="text"
+                    formControlName="estado">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="pais">PAÍS</label>
+                <input class="form-control" type="text" 
+                formControlName="pais">
+            </div>
+        </div>
+
+    </form>
+    <button class="btn btn-secondary" (click)="consultaCepService()">Exibir Alerta</button>
+</div>

@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cadastro-simples-web"
+    }
+  },
+  "defaultProject": "cadastro-simples-web",
+  "cli": {
+    "analytics": "919cd3ec-4fbb-47aa-b5b7-4a557adfcf20"
+  }
 }
